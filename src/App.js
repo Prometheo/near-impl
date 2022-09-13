@@ -26,7 +26,7 @@ export default function App() {
       console.log(
         await window.contract.check_token({
           id: `${window.accountId}-go-team-token`,
-        })
+        }), "GLORY"
       );
       if (window.accountId !== "") {
         console.log(
@@ -42,7 +42,7 @@ export default function App() {
         );
       }
     };
-    receivedNFT();
+    // receivedNFT();
   }, []);
 
   return (
